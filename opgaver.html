@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		<a id="text2" class="navbar-brand" href="#">MIN PORTFOLIO</a>
+		  <a id="text1" class="navbar-brand" href="index.html">Forside</a>
+		  <a id="text3" class="navbar-brand" href="opgaver.html">Opgaver</a>
+		  <a id="text4" class="navbar-brand" href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img1.jpg" style="width:100%">
+      </div>
+   
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img2.jpeg" style="width:100%">
+      </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img3.jpg" style="width:100%">
+      </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 ID="h1">Opgaver</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="box">
+        <img src="4.png">
+          <h2>Birger Bolcher</h2>
+          <p>I denne SKAL-opgave, var opgaven at lave 
+          en database samt trække forskellige værdier 
+      	  ud med query i SQL. </p>
+        </br>
+          <button id="modalBtn" class="button">Se fuld beskrivelse >></button>
+		  <div id="simpleModal" class="modal">
+		  <div class="modal-content">
+		  	<div class="modal-header">
+			<span class="closeBtn">&times;</span>
+			<div id="slider" >
+				<figure>
+				<img src="database.png">
+				<img src="1.png">
+				<img src="2.png">
+				<img src="3.png">
+        </figure>
+			<h2>Birger Bolcher</h2>
+		</div>
+		<div class="modal-body">
+			<p>En opgave om database og sql.</p>
+			<p>I denne SKAL-opgave, var opgaven at lave 
+			en database samt trække forskellige værdiger ud
+			med query i SQL. Måden jeg lavede opgaven på var 
+			at bruge SSMS (Sql Server Management Studio 2017)
+			jeg connectede først til SQL via localhost og efter
+			så lavede jeg en database ved navn "Birger Bolcher".
+			Efter det så lavede jeg en table og gav de forskellige
+			værdier som var nævnt med deres variabler. Efter 
+			indsatte jeg de forskellige navne, farver osv. 
+			hvor jeg så brugte query efter det, med det forskellige
+			commands f.eks SELECT * FROM "Bolcher" WHERE farve LIKE 'Rød'
+			OR farve LIKE'%Blå'; I denne eksemple der går den så ind i 
+			tablen og finder rows med røde og blå farver. Når man skriver
+			%blå f.eks. Så tager den alt med blå som f.eks lyseblå osv. Og 
+			det gjorde jeg så med de 10 forskellige krav som var i opgaven.</p>
+		</div>
+		<div class="modal-footer">
+			<h3><small><ins><i>Varighed: 7 dage.</small></ins></i></h3>
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+
+
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
